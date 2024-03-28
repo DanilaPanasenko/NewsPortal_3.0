@@ -1,0 +1,19 @@
+{% extends 'flatpages/default.html' %}
+
+{% load custom_filters %}
+
+{% block title %}
+Post
+{% endblock title %}
+
+{% block content %}
+<h1>{{ post.headline }}</h1>
+<!--<h1>{{ post.author }}</h1>-->
+<h2>{{ post.some_datatime|date:'d M Y' }}</h2>
+<!--<h2>{{ post.get_post_typ_display}}</h2>-->
+<!--{% for cat in post.category.all %}-->
+<!--<h3>{{ can.name_category}}</h3>-->
+<!--{% endfor %}-->
+<hr>
+<body>{{ post.text  }}</body>
+{% endblock content %}
