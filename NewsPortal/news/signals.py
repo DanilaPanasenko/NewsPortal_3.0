@@ -51,7 +51,8 @@ from .tasks import send_email_task
 #     if post_limit >= 3:
 #         raise ValidationError('Нельзя п   убликовать более 3 х постов в сутки')
 
-@receiver(m2m_changed, sender=PostCategory)
-def notify_about_new_post(sender, instance, **kwargs):
-    if kwargs['action'] == 'post_add':
-        send_email_task.delay(instance.pk)
+#При необходимости проверить отсылку сообщений расскоментировать данный сигнал!!!!!
+# @receiver(m2m_changed, sender=PostCategory)
+# def notify_about_new_post(sender, instance, **kwargs):
+#     if kwargs['action'] == 'post_add':
+#         send_email_task.delay(instance.pk)

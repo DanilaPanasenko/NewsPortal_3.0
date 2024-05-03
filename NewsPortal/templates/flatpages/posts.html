@@ -23,10 +23,15 @@ Posts
 
            {% for post in posts %}
            <tr>
-               <td>{{ post.headline }}</td>
+               <td>
+                   {% for category in post.category.all %}
+                        <a href="{% url 'posts_detail' post.id %}">{{post.headline}}</a>
+                   {% endfor %}
+               </td>
+<!--               <td>{{ post.headline }}</td>-->
                <td>{{ post.some_datatime|date:'d M Y' }}</td>
                <td>{{ post.text|truncatechars:20|censor }}</td>
-                <td>
+               <td>
                    {% for category in post.category.all %}
                         <a href="{% url 'category_list' category.id %}">{{category}}</a>
                    {% endfor %}
