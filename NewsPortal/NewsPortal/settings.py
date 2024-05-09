@@ -39,6 +39,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation', # обязательно впишите его перед админом, для локолизации моделей
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -131,8 +133,12 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
-# LANGUAGE_CODE = 'en-us'
-LANGUAGE_CODE = 'ru'
+LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'ru'
+LANGUAGES = [
+    ('en-us', 'English'),
+    ('ru', 'Russian')
+]
 
 TIME_ZONE = 'UTC'
 
