@@ -12,8 +12,8 @@ class CategoryAdmin(TranslationAdmin):
 class PostAdmin(TranslationAdmin):
     model = Post
 
-admin.site.register(Post)
-admin.site.register(Category)
+admin.site.register(Post, PostAdmin)
+admin.site.register(Category, CategoryAdmin)
 admin.site.register(Author)
 admin.site.register(PostCategory)
 admin.site.register(Comment)

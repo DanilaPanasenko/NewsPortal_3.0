@@ -1,0 +1,14 @@
+03.05.2024 18-39-52 INFO autoreload Watching for file changes with StatReloader
+03.05.2024 18-40-20 INFO basehttp "GET /news/search/ HTTP/1.1" 200 5433
+03.05.2024 18-40-20 WARNING log Not Found: /news/search/assets/favicon.ico
+03.05.2024 18-40-20 WARNING basehttp "GET /news/search/assets/favicon.ico HTTP/1.1" 404 179
+03.05.2024 18-40-26 INFO autoreload C:\Python\NewsProject\NewsPortal\news\urls.py changed, reloading.
+03.05.2024 18-40-27 INFO autoreload Watching for file changes with StatReloader
+03.05.2024 18-40-28 WARNING log Not Found: /news/search/
+03.05.2024 18-40-28 WARNING basehttp "GET /news/search/ HTTP/1.1" 404 179
+03.05.2024 18-40-28 WARNING log Not Found: /favicon.ico
+03.05.2024 18-40-28 WARNING basehttp "GET /favicon.ico HTTP/1.1" 404 179
+03.05.2024 18-40-35 INFO autoreload C:\Python\NewsProject\NewsPortal\news\urls.py changed, reloading.
+03.05.2024 18-40-37 INFO autoreload Watching for file changes with StatReloader
+03.05.2024 18-40-39 INFO basehttp "GET /news/search/ HTTP/1.1" 200 5433
+03.05.2024 18-41-06 INFO autoreload C:\Python\NewsProject\NewsPortal\NewsPortal\settings.py changed, reloading.
